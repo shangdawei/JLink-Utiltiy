@@ -1,0 +1,204 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AF087879-1975-4DCF-9B3C-3EAEF3EDE92D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="00 Sample\SampleLib.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="01 Exports\ExportsAdd.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="01 Exports\ExportsRead.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02 Imports\ImportsAdd.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02 Imports\ImportsEnumeration.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02 Imports\ImportsDelayed.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03 Resources\ResourceExtract.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03 Resources\ResourceBuild.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03 Resources\ResourceStats.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03 Resources\ResourceVersionInfo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05 FillMem\FillMem.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="06 Relocs\BuildRelocs.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04 Module Loader\ModuleLoader.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="09 PEID Signatures\PeidSignatures.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="10 Load From Process\ProcessTest.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SampleLib">
+        <MSBuild Projects="00 Sample\SampleLib.dproj"/>
+    </Target>
+    <Target Name="SampleLib:Clean">
+        <MSBuild Projects="00 Sample\SampleLib.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SampleLib:Make">
+        <MSBuild Projects="00 Sample\SampleLib.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExportsAdd">
+        <MSBuild Projects="01 Exports\ExportsAdd.dproj"/>
+    </Target>
+    <Target Name="ExportsAdd:Clean">
+        <MSBuild Projects="01 Exports\ExportsAdd.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExportsAdd:Make">
+        <MSBuild Projects="01 Exports\ExportsAdd.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExportsRead">
+        <MSBuild Projects="01 Exports\ExportsRead.dproj"/>
+    </Target>
+    <Target Name="ExportsRead:Clean">
+        <MSBuild Projects="01 Exports\ExportsRead.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExportsRead:Make">
+        <MSBuild Projects="01 Exports\ExportsRead.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportsAdd">
+        <MSBuild Projects="02 Imports\ImportsAdd.dproj"/>
+    </Target>
+    <Target Name="ImportsAdd:Clean">
+        <MSBuild Projects="02 Imports\ImportsAdd.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportsAdd:Make">
+        <MSBuild Projects="02 Imports\ImportsAdd.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportsEnumeration">
+        <MSBuild Projects="02 Imports\ImportsEnumeration.dproj"/>
+    </Target>
+    <Target Name="ImportsEnumeration:Clean">
+        <MSBuild Projects="02 Imports\ImportsEnumeration.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportsEnumeration:Make">
+        <MSBuild Projects="02 Imports\ImportsEnumeration.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportsDelayed">
+        <MSBuild Projects="02 Imports\ImportsDelayed.dproj"/>
+    </Target>
+    <Target Name="ImportsDelayed:Clean">
+        <MSBuild Projects="02 Imports\ImportsDelayed.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportsDelayed:Make">
+        <MSBuild Projects="02 Imports\ImportsDelayed.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ResourceExtract">
+        <MSBuild Projects="03 Resources\ResourceExtract.dproj"/>
+    </Target>
+    <Target Name="ResourceExtract:Clean">
+        <MSBuild Projects="03 Resources\ResourceExtract.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ResourceExtract:Make">
+        <MSBuild Projects="03 Resources\ResourceExtract.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ResourceBuild">
+        <MSBuild Projects="03 Resources\ResourceBuild.dproj"/>
+    </Target>
+    <Target Name="ResourceBuild:Clean">
+        <MSBuild Projects="03 Resources\ResourceBuild.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ResourceBuild:Make">
+        <MSBuild Projects="03 Resources\ResourceBuild.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ResourceStats">
+        <MSBuild Projects="03 Resources\ResourceStats.dproj"/>
+    </Target>
+    <Target Name="ResourceStats:Clean">
+        <MSBuild Projects="03 Resources\ResourceStats.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ResourceStats:Make">
+        <MSBuild Projects="03 Resources\ResourceStats.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ResourceVersionInfo">
+        <MSBuild Projects="03 Resources\ResourceVersionInfo.dproj"/>
+    </Target>
+    <Target Name="ResourceVersionInfo:Clean">
+        <MSBuild Projects="03 Resources\ResourceVersionInfo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ResourceVersionInfo:Make">
+        <MSBuild Projects="03 Resources\ResourceVersionInfo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FillMem">
+        <MSBuild Projects="05 FillMem\FillMem.dproj"/>
+    </Target>
+    <Target Name="FillMem:Clean">
+        <MSBuild Projects="05 FillMem\FillMem.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FillMem:Make">
+        <MSBuild Projects="05 FillMem\FillMem.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BuildRelocs">
+        <MSBuild Projects="06 Relocs\BuildRelocs.dproj"/>
+    </Target>
+    <Target Name="BuildRelocs:Clean">
+        <MSBuild Projects="06 Relocs\BuildRelocs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BuildRelocs:Make">
+        <MSBuild Projects="06 Relocs\BuildRelocs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ModuleLoader">
+        <MSBuild Projects="04 Module Loader\ModuleLoader.dproj"/>
+    </Target>
+    <Target Name="ModuleLoader:Clean">
+        <MSBuild Projects="04 Module Loader\ModuleLoader.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ModuleLoader:Make">
+        <MSBuild Projects="04 Module Loader\ModuleLoader.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PeidSignatures">
+        <MSBuild Projects="09 PEID Signatures\PeidSignatures.dproj"/>
+    </Target>
+    <Target Name="PeidSignatures:Clean">
+        <MSBuild Projects="09 PEID Signatures\PeidSignatures.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PeidSignatures:Make">
+        <MSBuild Projects="09 PEID Signatures\PeidSignatures.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProcessTest">
+        <MSBuild Projects="10 Load From Process\ProcessTest.dproj"/>
+    </Target>
+    <Target Name="ProcessTest:Clean">
+        <MSBuild Projects="10 Load From Process\ProcessTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProcessTest:Make">
+        <MSBuild Projects="10 Load From Process\ProcessTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SampleLib;ExportsAdd;ExportsRead;ImportsAdd;ImportsEnumeration;ImportsDelayed;ResourceExtract;ResourceBuild;ResourceStats;ResourceVersionInfo;FillMem;BuildRelocs;ModuleLoader;PeidSignatures;ProcessTest"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SampleLib:Clean;ExportsAdd:Clean;ExportsRead:Clean;ImportsAdd:Clean;ImportsEnumeration:Clean;ImportsDelayed:Clean;ResourceExtract:Clean;ResourceBuild:Clean;ResourceStats:Clean;ResourceVersionInfo:Clean;FillMem:Clean;BuildRelocs:Clean;ModuleLoader:Clean;PeidSignatures:Clean;ProcessTest:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SampleLib:Make;ExportsAdd:Make;ExportsRead:Make;ImportsAdd:Make;ImportsEnumeration:Make;ImportsDelayed:Make;ResourceExtract:Make;ResourceBuild:Make;ResourceStats:Make;ResourceVersionInfo:Make;FillMem:Make;BuildRelocs:Make;ModuleLoader:Make;PeidSignatures:Make;ProcessTest:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
