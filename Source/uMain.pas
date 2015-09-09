@@ -121,6 +121,8 @@ begin
 
       Dump := PByte( JLinkFirmwareInformation.Dump - DLL_ImageBase +
         MapView.Memory );
+
+      msFirmware.Seek( 0, soBeginning );
       msFirmware.Write( Dump^, JLinkFirmwareInformation.Size );
       msFirmware.SaveToFile( FileName );
     end;
